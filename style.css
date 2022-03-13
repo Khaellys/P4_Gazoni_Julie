@@ -136,7 +136,8 @@ a:hover {
 .d-bloc h4 a,
 .d-bloc h5 a,
 .d-bloc h6 a,
-.d-bloc p a {
+.d-bloc p a,
+.social {
     color: #372C2C;
 }
 
@@ -153,7 +154,8 @@ a:hover {
 .d-bloc h4 a:hover,
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
-.d-bloc p a:hover {
+.d-bloc p a:hover,
+.social a:hover {
     color: rgba(255, 255, 255, 1);
 }
 
