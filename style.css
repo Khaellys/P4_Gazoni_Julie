@@ -52,6 +52,10 @@ a:hover {
     padding: 50px;
 }
 
+.row .size {
+    font-size: 32px;
+}
+
 .bloc-sm {
     padding: 20px 50px;
 }
@@ -270,6 +274,15 @@ a:hover {
 
 .voffset-lg {
     margin-top: 80px;
+}
+
+.citation {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.author-citation {
+    font-style: normal;
 }
 
 .row-no-gutters {
@@ -649,7 +662,7 @@ p,
 label,
 .btn,
 a {
-    font-family: "helvetica";
+    font-family: Helvetica, Arial;
     font-weight: 400;
     color: #575757!important;
 }
