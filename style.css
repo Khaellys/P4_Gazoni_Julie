@@ -318,6 +318,8 @@ a:hover {
 
 .navbar-brand img {
     max-height: 200px;
+    height: 40px;
+    width: 100%;
     margin: 0 5px 0 0;
     display: inline;
 }
@@ -704,6 +706,11 @@ p {
     margin: auto auto auto auto;
 }
 
+.col-sm-12 img {
+    width: 100px;
+    height: 100px;
+}
+
 .h1 {
     font-size: 20px;
     font-family: "Open Sans";
@@ -765,6 +772,11 @@ h4 {
 .portfolio-row {
     margin-bottom: 44px;
     margin-top: 50px;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
 }
 
 .avatar {
