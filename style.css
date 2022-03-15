@@ -698,7 +698,7 @@ li a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 16px!important;
 }
 
 .tight-width-whitespace {
@@ -775,8 +775,8 @@ h4 {
 }
 
 .responsive {
-    max-width: 100%;
-    height: 100%;
+    max-width: 100%!important;
+    height: 100%!important;
 }
 
 .avatar {
@@ -805,8 +805,17 @@ h4 {
     background-color: #F3976C;
 }
 
-.tc-white {
-    color: #F3976C!important;
+.col-sm-12 .tc-white,
+.col-sm-12 .h2 {
+    color: #372C2C;
+}
+
+.col-sm-12 .h1 {
+    color: white!important;
+}
+
+.contrast {
+    color: white!important;
 }
 
 .btn-atomic-tangerine {
