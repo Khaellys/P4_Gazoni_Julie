@@ -24,7 +24,7 @@ a:hover {
     bottom: 0;
     width: 100%;
     z-index: 100000;
-    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
+    background: #FFFFFF;
 }
 
 .bloc {
@@ -50,6 +50,10 @@ a:hover {
 
 .bloc-md {
     padding: 50px;
+}
+
+.row .size {
+    font-size: 32px;
 }
 
 .bloc-sm {
@@ -91,7 +95,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img1/texture-paper.webp");
     background-size: 280px 280px;
 }
 
@@ -100,7 +104,7 @@ a:hover {
 }
 
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
+    color: #372C2C;
 }
 
 .d-bloc button:hover {
@@ -132,8 +136,9 @@ a:hover {
 .d-bloc h4 a,
 .d-bloc h5 a,
 .d-bloc h6 a,
-.d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+.d-bloc p a,
+.social {
+    color: #372C2C;
 }
 
 .d-bloc .a-btn:hover,
@@ -149,7 +154,8 @@ a:hover {
 .d-bloc h4 a:hover,
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
-.d-bloc p a:hover {
+.d-bloc p a:hover,
+.social a:hover {
     color: rgba(255, 255, 255, 1);
 }
 
@@ -272,6 +278,15 @@ a:hover {
     margin-top: 80px;
 }
 
+.citation {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.author-citation {
+    font-style: normal;
+}
+
 .row-no-gutters {
     margin-right: 0;
     margin-left: 0;
@@ -303,6 +318,8 @@ a:hover {
 
 .navbar-brand img {
     max-height: 200px;
+    height: 40px;
+    width: 100%;
     margin: 0 5px 0 0;
     display: inline;
 }
@@ -649,9 +666,13 @@ p,
 label,
 .btn,
 a {
-    font-family: "helvetica";
+    font-family: Helvetica, Arial;
     font-weight: 400;
-    color: #575757!important;
+    color: #575757;
+}
+
+li a {
+    color: #502727!important;
 }
 
 .container {
@@ -677,12 +698,17 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 16px!important;
 }
 
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
+}
+
+.col-sm-12 img {
+    width: 100px;
+    height: 100px;
 }
 
 .h1 {
@@ -736,7 +762,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: #372C2C!important;
 }
 
 .portfolio-thumb {
@@ -746,6 +772,11 @@ h4 {
 .portfolio-row {
     margin-bottom: 44px;
     margin-top: 50px;
+}
+
+.responsive {
+    max-width: 100%!important;
+    height: 100%!important;
 }
 
 .avatar {
@@ -774,13 +805,22 @@ h4 {
     background-color: #F3976C;
 }
 
-.tc-white {
-    color: #F3976C!important;
+.col-sm-12 .tc-white,
+.col-sm-12 .h2 {
+    color: #372C2C;
+}
+
+.col-sm-12 .h1 {
+    color: white!important;
+}
+
+.contrast {
+    color: white!important;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #372C2C!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -810,19 +850,19 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("img1/dots-bg.webp");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("img1/lines-h2-bg.webp");
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("img1/agence-la-panthere1.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img1/image-de-presentation.webp");
 }
 
 @media (max-width: 1024px) {
@@ -848,13 +888,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -872,10 +912,6 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -884,8 +920,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
